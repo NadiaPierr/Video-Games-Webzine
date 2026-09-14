@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Game Mag</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <main class="container">
+                <header>
+                    <div class="logo">
+                        <img src="./pictures/edited/gameon-logo-topbar-transparent.png" alt="Game On logo">
+                    </div>
+                    
+                    <div class="site_name"></div>
+                    <button class="menu_toggle_button" type="button" aria-controls="nav_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <nav class="menu_container">
+                        <ul id="nav_menu">
+                            <li><a class="nav_link" href="#home-page">HOME</a></li>
+                            <li> <a  class="nav_link" href="#news_page">NEWS</a></li>
+                            <li><a class="nav_link" href="#reviews-page">REVIEWS</a></li>
+                            <li><a class="nav_link" href="#specials-page">ΑΦΙΕΡΩΜΑΤΑ</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <!-- 
+                <section class="menu-toggle">
+                    <ul class="menuitems">
+                        <li> <a href="#">HOME</a></li>
+                        <li> <a href="#">NEWS</a></li>
+                        <li> <a href="#">REVIEWS</a></li>
+                        <li> <a href="#">ΑΦΙΕΡΩΜΑΤΑ</a></li>
+                    </ul>
+                </section>
+                -->
+                <div class="header-lines">
+                    <div class="h-l"></div>
+                    <div class="h-l"></div>
+                </div>
+
+                <section class="upper" id="home-page">
+                    <div class="slider">
+                        <a class="clickable_card slide_one" id="one" href="#"><h3 class="text">Δέκα retro παιχνίδια που μπορείτε να παίξετε σε σύγχρονα συστήματα</h3></a>
+                        <div class="slide_two">
+                            <a class="clickable_card slider_slice" id="two" href="#"><h3 class="text">Δέκα παιχνίδια με retro άρωμα</h3></a>
+                            <a class="clickable_card slider_slice" id="three" href="#"><h3 class="text">Οι καλύτερες Pokemon ROM Hacks</h3></a>
+                        </div>
+                    </div>
+
+                    <div class="slider_responsive">
+                        <a class="clickable_card slide_responsive" id="s_one" href="#"><h3 class="text">Δέκα retro παιχνίδια που μπορείτε να παίξετε σε σύγχρονα συστήματα</h3></a>
+                        <a class="clickable_card slide_responsive" id="s_two" href="#"><h3 class="text">Δέκα παιχνίδια με retro άρωμα</h3></a>
+                        <a class="clickable_card slide_responsive" id="s_three" href="#"><h3 class="text">Οι καλύτερες Pokemon ROM Hacks</h3></a>
+                    </div>
+
+                    <div class="reviews" id="reviews-page">
+                        <a class="clickable_card review" id="review_one" href="#"><h3 class="text">Elden Ring</h3></a>
+                        <a class="clickable_card review" id="review_two" href="#"><h3 class="text">Yakuza Kiwami</h3></a>
+                        <a class="clickable_card review" id="review_three" href="#"><h3 class="text">The Wolf Among Us</h3></a>
+                    </div>
+                </section>
+
+                <section class="top_articles" id="news_page">
+                    <div class="line-wrapper">
+                        <div class="line"></div>
+                        <h2><span>TOP ARTICLES</span></h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="articles_container">
+                        <a class="clickable_card article" id="article_one" href="#"><h3>Τι να παίξετε στο Game Pass</h3></a>
+                        <a class="clickable_card article" id="article_two" href="#"><h3>Cozy Παιχνίδια για το Φθινόπωρο</h3></a>
+                        <a class="clickable_card article" id="article_three" href="#"><h3>Αφιέρωμα στο Game Boy Advance</h3></a>
+                    </div>
+                </section>
+
+                <section class="extras" id="specials-page">
+                    <button class="extras_button" id="tributes_header">
+                        <h3>ΑΦΙΕΡΩΜΑΤΑ</h3>
+                    </button>
+                    <button class="extras_button" id="views_header">
+                        <h3>ΑΠΟΨΕΙΣ</h3>
+                    </button>
+                    <div class="tributes">
+                        <a class="clickable_card trib" id="trib_one" href="#">
+                            <div class="trib_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Η γοητεία των Souls</h4>
+                            </div>
+                        </a>
+                        <a class="clickable_card trib" id="trib_two" href="#">
+                            <div class="trib_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Τα video games στη μεγάλη οθόνη</h4>
+                            </div>                           
+                        </a>
+                          <a class="clickable_card trib" id="trib_three" href="#">
+                            <div class="trib_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Τι έκανε το Playstation 2 τόσο ξεχωριστό?</h4>
+                            </div>                           
+                        </a>                      
+                    </div>
+                    <div class="views">
+                        <a class="clickable_card view" id="view_one" href="#">
+                            <div class="view_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Ποιά remakes χρειαζόμαστε?</h4>
+                            </div>                           
+                        </a>   
+                        <a class="clickable_card view" id="view_two" href="#">
+                            <div class="view_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Το Mass Effect και το storytelling στα παιχνίδια</h4>
+                            </div>                           
+                        </a> 
+                        <a class="clickable_card view" id="view_three" href="#">
+                            <div class="view_pic_container"></div>
+                            <div class="h-container">
+                                <h4>Metroidvania - Αξία σταθερή στον χρόνο</h4>
+                            </div>                           
+                        </a>                  
+                    </div>                       
+                </section>
+
+            </main>    
+            
+            <footer class="footer">
+                <div class="footer-wrapper">
+                    <div class="copyright">
+                        <p>&copy; Video Games Mag</p>
+                    </div>
+                    <div class="social">
+                        <a href="#" aria-label="Instagram"><img src="./pictures/edited/Footer/insta_footer.png" alt="Instagram"></a>
+                        <a href="#" aria-label="YouTube"><img src="./pictures/edited/Footer/yt_footer.png" alt="YouTube"></a>
+                        <a href="#" aria-label="Facebook"><img src="./pictures/edited/Footer/face_footer.png" alt="Facebook"></a>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+        <script>
+            const menuToggleButton = document.querySelector('.menu_toggle_button');
+            const menuContainer = document.querySelector('.menu_container');
+            const header = document.querySelector('header');
+
+            menuToggleButton.addEventListener('click', () => {
+                const isOpen = menuContainer.classList.toggle('is_open');
+                header.classList.toggle('menu_is_open', isOpen);
+                menuToggleButton.setAttribute('aria-expanded', isOpen);
+            });
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,11 @@
+# Personal backups
+backup/
+
+# Draft / testing files
+draft/
+
+# Personal notes
+notes.docx
+
+# Original pictures
+pictures/original/
